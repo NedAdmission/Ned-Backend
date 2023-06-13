@@ -11,7 +11,7 @@ dotenv.config()
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin:"https://www.nedadmissioncell.com",
+    origin:["https://www.nedadmissioncell.com","http://www.nedadmissioncell.com"]
     methods:["GET","POST","PUT","DELETE"]
 }))
 const connect = ()=>{
